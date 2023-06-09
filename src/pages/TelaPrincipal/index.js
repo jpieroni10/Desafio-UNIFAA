@@ -11,7 +11,7 @@ const Tab = createBottomTabNavigator();
 function TelaPrincipalScreen() {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Bem-vindo à Tela Principal</Text>
+      <Text style={styles.title}>Bem-vindo à Tela inicial</Text>
     </View>
   );
 }
@@ -23,7 +23,7 @@ export default function PaginaPrincipal() {
         tabBarIcon: ({ color, size }) => {
           let iconName;
 
-          if (route.name === 'Tela Principal') {
+          if (route.name === 'Tela inicial') {
             iconName = 'home-outline';
           } else if (route.name === 'Login') {
             iconName = 'log-in-outline';
@@ -46,7 +46,7 @@ export default function PaginaPrincipal() {
         },
       })}
     >
-      <Tab.Screen name="Tela Principal" component={TelaPrincipalScreen} />
+      <Tab.Screen name="Tela inicial" component={TelaPrincipalScreen} />
       <Tab.Screen name="Login" component={Login} />
       <Tab.Screen name="Cadastro" component={Cadastro} />
     </Tab.Navigator>

@@ -27,7 +27,6 @@ function Titulo(props){
 
 const css = StyleSheet.create({
     titulo: {
-        color: '#00B0FF',
         fontSize: 40
     }
 });
